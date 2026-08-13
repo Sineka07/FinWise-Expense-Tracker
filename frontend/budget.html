@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FinWise - Budget</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="dashboard.html"><i class="fas fa-wallet"></i> FinWise</a>
+            <a href="dashboard.html" class="btn btn-outline-light btn-sm">Back</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>📊 Budget Management</h2>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">Set Budget</div>
+                    <div class="card-body">
+                        <form id="budgetForm">
+                            <select class="form-select mb-2" id="category">
+                                <option>Food</option><option>Housing</option>
+                                <option>Shopping</option><option>Entertainment</option>
+                                <option>Transport</option><option>Utilities</option>
+                            </select>
+                            <input type="number" class="form-control mb-2" id="amount" placeholder="Amount">
+                            <button type="submit" class="btn btn-primary w-100">Set Budget</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">Budget List</div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead><tr><th>Category</th><th>Budget</th><th>Spent</th><th>Status</th></tr></thead>
+                            <tbody id="budgetBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/budget.js"></script>
+</body>
+</html>
