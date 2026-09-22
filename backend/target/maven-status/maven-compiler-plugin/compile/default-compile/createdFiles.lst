@@ -18,3 +18,4 @@ com\finwise\controller\AuthController.class
 com\finwise\model\Expense.class
 com\finwise\dao\IncomeDAO.class
 com\finwise\model\Goal.class
+com\finwise\config\SecurityConfig.class

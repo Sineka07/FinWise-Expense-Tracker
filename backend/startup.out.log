@@ -1,0 +1,44 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.14)
+
+2026-09-22 21:44:23.500  INFO 6940 --- [           main] com.finwise.FinWiseApplication           : Starting FinWiseApplication v1.0.0 using Java 25.0.1 on SINEKA with PID 6940 (C:\FinWise\backend\target\finwise-1.0.0.war started by sneha in C:\FinWise\backend)
+2026-09-22 21:44:23.505  INFO 6940 --- [           main] com.finwise.FinWiseApplication           : No active profile set, falling back to 1 default profile: "default"
+2026-09-22 21:44:24.098  INFO 6940 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-22 21:44:24.137  INFO 6940 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2026-09-22 21:44:24.820  INFO 6940 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2026-09-22 21:44:24.828  INFO 6940 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-22 21:44:24.829  INFO 6940 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.78]
+2026-09-22 21:44:26.017  INFO 6940 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-22 21:44:26.039  INFO 6940 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2481 ms
+2026-09-22 21:44:26.249  INFO 6940 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-22 21:44:26.302  INFO 6940 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2026-09-22 21:44:26.401  INFO 6940 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2026-09-22 21:44:26.471  INFO 6940 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-22 21:44:26.825  INFO 6940 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-22 21:44:26.836  INFO 6940 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2026-09-22 21:44:27.830  INFO 6940 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-09-22 21:44:27.864  INFO 6940 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-22 21:44:28.094  WARN 6940 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-22 21:44:28.537  WARN 6940 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 593bfbb0-b09d-4737-89ef-905de02d39c3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-22 21:44:28.715  INFO 6940 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34ede267, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6bf77ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@37f71e8, org.springframework.security.web.header.HeaderWriterFilter@50013a15, org.springframework.security.web.csrf.CsrfFilter@36d39655, org.springframework.security.web.authentication.logout.LogoutFilter@1ce57bbb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19677add, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@e4bb10b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@51c6e775, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4c3fcbe7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@397dfbe8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@783f5f71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@372841d2, org.springframework.security.web.session.SessionManagementFilter@5606d537, org.springframework.security.web.access.ExceptionTranslationFilter@594c66c3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42f2cae8]
+2026-09-22 21:44:28.782  INFO 6940 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2026-09-22 21:44:28.794  INFO 6940 --- [           main] com.finwise.FinWiseApplication           : Started FinWiseApplication in 5.659 seconds (JVM running for 6.239)
+=========================================
+  ? FINWISE - Smart Personal Finance Manager
+  ? Server Started Successfully!
+  ? http://localhost:8080
+=========================================
+2026-09-22 21:44:34.969  INFO 6940 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-22 21:44:34.990  INFO 6940 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-22 21:44:34.995  INFO 6940 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
