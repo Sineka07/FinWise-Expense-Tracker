@@ -1,6 +1,5 @@
 package com.finwise.dao;
 
-import com.finwise.model.Subscription;
 import com.finwise.model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -18,15 +17,17 @@ public class SubscriptionDAO {
     @Autowired
     private SessionFactory sessionFactory;
     
-    public void saveSubscription(Subscription subscription) {
+    public void saveSubscription(Object subscription) {
         Session session = sessionFactory.getCurrentSession();
         session.saveOrUpdate(subscription);
     }
     
-    public List<Subscription> getSubscriptionsByUser(User user) {
+    @SuppressWarnings("rawtypes")
+    public List getSubscriptionsByUser(User user) {
         Session session = sessionFactory.getCurrentSession();
-        Query<Subscription> query = session.createQuery(
-            "FROM Subscription WHERE user = :user ORDER BY renewalDate ASC", Subscription.class);
+        Query query = session.createQuery(
+            "FROM Subscription WHERE user = :user ORDER BY renewalDate ASC",
+            Object.class);
         query.setParameter("user", user);
         return query.list();
     }

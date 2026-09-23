@@ -1,0 +1,9 @@
+com\finwise\FinWiseApplication.class
+com\finwise\model\Budget.class
+com\finwise\config\WebConfig.class
+com\finwise\model\Income.class
+com\finwise\model\Notification.class
+com\finwise\dao\ExpenseDAO.class
+com\finwise\model\User.class
+com\finwise\model\Expense.class
+com\finwise\model\Goal.class
